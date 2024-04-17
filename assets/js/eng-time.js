@@ -51,7 +51,7 @@ function refreshTime(){
         return time;
     }
     function setTime() {
-        var create_time = Math.round(new Date(Date.UTC(2024, 01, 21, 0, 0, 0)).getTime() / 1000);
+        var create_time = Math.round(new Date(Date.UTC(2024, 01, 23, 0, 0, 0)).getTime() / 1000);
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
         currentTime = secondToDate((timestamp - create_time));
         currentTimeHtmlENG = currentTime[0] + ' YEAR ' + currentTime[1] + ' DAY '
