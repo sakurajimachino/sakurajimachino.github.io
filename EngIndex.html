@@ -13,7 +13,7 @@
 		<div class="content">
 			<div class="inner">
 				<h1>sakurajima_chino</h1>
-				<p>Welcome to my home page!</p>
+				<p>Welcome to my wensite!</p>
 				<p>Now the time is:<span id="time"></span> Now you are in UTC&nbsp;<span id="timezone"></span>&nbsp;zone </p>
 			</div>
 		</div>
@@ -52,7 +52,18 @@
 		</article>
 	</div>
 	<footer id="footer">
+		<div id="sakana-widget"></div>
 		<p class="copyright"><a href="index.html">中文页面</a></p>
+		<link
+		rel="stylesheet"
+		href="assets/css/sakana.min.css"
+		/>
+		<script>
+		function initSakanaWidget() {
+		new SakanaWidget().mount('#sakana-widget');
+		}
+		</script>
+		<script async onload="initSakanaWidget()" src="assets/js/sakana.min.js"></script>
 		<br \>
 		<p class="copyright">&copy; sakurajima_chino.2024</p>
 		<p class="copyright">website is already running:<span id="htmer_time_ENG" style="color: white;"></span></p>
